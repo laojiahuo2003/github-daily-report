@@ -14,6 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
+      - name: Delete old reports (2 months ago)
+        run: |
+          find reports/ -name "*.md" -type f -mtime +60 -delete || true
+          echo "Deleted reports older than 60 days"
+      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

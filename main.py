@@ -164,7 +164,8 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
 
 def save_report(content: str, date_str: str) -> str:
     os.makedirs(REPORTS_DIR, exist_ok=True)
-    filename = f"{date_str}.md"
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
+    filename = f"{timestamp}.md"
     filepath = os.path.join(REPORTS_DIR, filename)
     
     with open(filepath, "w", encoding="utf-8") as f:
