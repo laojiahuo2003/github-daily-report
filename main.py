@@ -76,12 +76,23 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
         "monthly": "本月获得最多新 star 的项目"
     }
     
+    shown_repos = set()
+    
     for period in ["daily", "weekly", "monthly"]:
         repos = trending_repos.get(period, [])
         if repos:
             md += f"## {trending_labels[period]}\n\n"
-            for i, repo in enumerate(repos[:10], 1):
+            count = 0
+            for repo in repos:
                 name = repo.get("full_name", "")
+                if name in shown_repos:
+                    continue
+                
+                shown_repos.add(name)
+                count += 1
+                if count > 10:
+                    break
+                
                 url = repo.get("html_url", f"https://github.com/{name}")
                 stars = repo.get("stargazers_count", 0)
                 forks = repo.get("forks_count", 0)
@@ -89,7 +100,7 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
                 desc = repo.get("description", "无描述")
                 created = format_created_date(repo)
                 
-                md += f"{i}. **[{name}]({url})** ⭐{stars} 🍴{forks}"
+                md += f"{count}. **[{name}]({url})** ⭐{stars} 🍴{forks}"
                 if created:
                     md += f" 📅{created}"
                 if language:
@@ -108,8 +119,17 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
         repos = created_repos.get(period, [])
         if repos:
             md += f"## {created_labels[period]}\n\n"
-            for i, repo in enumerate(repos[:10], 1):
+            count = 0
+            for repo in repos:
                 name = repo.get("full_name", "")
+                if name in shown_repos:
+                    continue
+                
+                shown_repos.add(name)
+                count += 1
+                if count > 10:
+                    break
+                
                 url = repo.get("html_url", f"https://github.com/{name}")
                 stars = repo.get("stargazers_count", 0)
                 forks = repo.get("forks_count", 0)
@@ -117,7 +137,7 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
                 desc = repo.get("description", "无描述")
                 created = format_created_date(repo)
                 
-                md += f"{i}. **[{name}]({url})** ⭐{stars} 🍴{forks}"
+                md += f"{count}. **[{name}]({url})** ⭐{stars} 🍴{forks}"
                 if created:
                     md += f" 📅{created}"
                 if language:
@@ -140,8 +160,17 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
         
         for strategy, repos in strategy_groups.items():
             md += f"### {strategy}\n\n"
-            for repo in repos[:10]:
+            count = 0
+            for repo in repos:
                 name = repo.get("full_name", "")
+                if name in shown_repos:
+                    continue
+                
+                shown_repos.add(name)
+                count += 1
+                if count > 10:
+                    break
+                
                 url = repo.get("html_url", f"https://github.com/{name}")
                 stars = repo.get("stargazers_count", 0)
                 forks = repo.get("forks_count", 0)

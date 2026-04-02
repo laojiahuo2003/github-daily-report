@@ -83,12 +83,22 @@ def format_repos_for_wechat(trending_repos: Dict[str, List[Dict]], created_repos
         "monthly": "本月获得最多新 star 的项目"
     }
     
+    shown_repos = set()
+    
     for period in ["daily", "weekly", "monthly"]:
         repos = trending_repos.get(period, [])
         if repos:
             html += '<div class="section">'
             html += f'<div class="section-title">{trending_labels[period]}</div>'
-            for repo in repos[:5]:
+            count = 0
+            for repo in repos:
+                name = repo.get("full_name", "")
+                if name in shown_repos:
+                    continue
+                shown_repos.add(name)
+                count += 1
+                if count > 5:
+                    break
                 html += format_single_repo_html(repo)
             html += '</div>'
     
@@ -103,14 +113,30 @@ def format_repos_for_wechat(trending_repos: Dict[str, List[Dict]], created_repos
         if repos:
             html += '<div class="section">'
             html += f'<div class="section-title">{created_labels[period]}</div>'
-            for repo in repos[:5]:
+            count = 0
+            for repo in repos:
+                name = repo.get("full_name", "")
+                if name in shown_repos:
+                    continue
+                shown_repos.add(name)
+                count += 1
+                if count > 5:
+                    break
                 html += format_single_repo_html(repo)
             html += '</div>'
     
     if explored_repos:
         html += '<div class="section">'
         html += '<div class="section-title">🔍 探索发现</div>'
-        for repo in explored_repos[:10]:
+        count = 0
+        for repo in explored_repos:
+            name = repo.get("full_name", "")
+            if name in shown_repos:
+                continue
+            shown_repos.add(name)
+            count += 1
+            if count > 10:
+                break
             html += format_single_repo_html(repo)
         html += '</div>'
     
