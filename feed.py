@@ -36,10 +36,9 @@ def report_summary(filepath: str, max_items: int = 5) -> str:
             for line in f:
                 line = line.strip()
                 # 表格数据行：以 | 开头且含 markdown 链接（表头和分隔行没有链接）
+                # 保留 [name](url) 链接格式，订阅端可解析为可点击的项目名
                 if line.startswith("|") and "](" in line:
                     cells = [c.strip() for c in line.strip("|").split("|")]
-                    # [name](url) -> name
-                    cells = [re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", c) for c in cells]
                     if len(cells) >= 4:
                         lines.append(" | ".join(cells[:4]))
                 if len(lines) >= max_items:
