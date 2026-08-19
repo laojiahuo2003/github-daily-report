@@ -21,6 +21,7 @@ jobs:
       - name: Delete old reports (2 months ago)
         run: |
           find reports/ -name "*.md" -type f -mtime +60 -delete || true
+          find reports/ -name "*.json" -type f -mtime +60 -delete || true
           echo "Deleted reports older than 60 days"
       
       - name: Set up Python
@@ -44,7 +45,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add reports/ feed.xml
+          git add reports/ feed.xml feed.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Add daily report $(TZ='Asia/Shanghai' date +'%Y-%m-%d')"
           git stash
           git pull --rebase
@@ -55,3 +56,4 @@ jobs:
         run: |
           sleep 5
           curl -sf "https://purge.jsdelivr.net/gh/laojiahuo2003/github-daily-report@main/feed.xml" || true
+          curl -sf "https://purge.jsdelivr.net/gh/laojiahuo2003/github-daily-report@main/feed.json" || true

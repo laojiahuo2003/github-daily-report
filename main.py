@@ -1,3 +1,4 @@
+import json
 import os
 from datetime import datetime
 from typing import List, Dict, Tuple
@@ -8,7 +9,7 @@ from fetchers.trending import fetch_all_trending
 from notifiers.wechat import send_daily_report
 from history_tracker import record_repos, get_fast_growing_repos, get_newly_discovered_repos
 from categorizer import categorize_repo, group_by_category
-from feed import generate_index, generate_rss
+from feed import generate_index, generate_rss, generate_json_index
 
 
 def format_created_date(repo: Dict) -> str:
@@ -252,6 +253,111 @@ def save_report(content: str, date_str: str) -> str:
     return filepath
 
 
+def _repo_to_dict(repo: Dict) -> Dict:
+    """把单个仓库序列化为 JSON 友好结构（与 markdown 渲染同源）"""
+    name = repo.get("full_name", "")
+    return {
+        "name": name,
+        "url": repo.get("html_url", f"https://github.com/{name}"),
+        "stars": repo.get("stargazers_count", 0),
+        "stars_fmt": format_stars(repo.get("stargazers_count", 0)),
+        "growth": repo_growth(repo),
+        "weekly_growth": repo.get("_weekly_growth", 0),
+        "language": repo.get("language") or "",
+        "category": categorize_repo(repo),
+        "description": (repo.get("description") or "").strip(),
+        "created": format_created_date(repo),
+        "source": repo.get("_source_label", ""),
+        "first_seen": repo.get("_first_seen", ""),
+    }
+
+
+def _build_category_groups(repos: List[Dict], max_total: int, max_per_category: int) -> List[Dict]:
+    """与 render_category_section 同源的分类分组（含同样的截断规则）"""
+    groups = group_by_category(repos[:max_total * 2], max_per_category=max_per_category)
+    out, shown = [], 0
+    for category, items in groups.items():
+        if shown >= max_total:
+            break
+        projects = []
+        for repo in items:
+            if shown >= max_total:
+                break
+            projects.append(_repo_to_dict(repo))
+            shown += 1
+        if projects:
+            out.append({"category": category, "projects": projects})
+    return out
+
+
+def build_report_data(trending_repos, created_repos, explored_repos,
+                      fast_growing, newly_discovered, date_str) -> Dict:
+    """生成与 markdown 报告同源的 JSON 结构，供博客日报页渲染卡片"""
+    leaderboard = build_leaderboard(trending_repos)
+
+    data = {
+        "date": date_str,
+        "best": _repo_to_dict(leaderboard[0]) if leaderboard else None,
+        "leaderboard": [_repo_to_dict(r) for r in leaderboard],
+        "fast_growing": [_repo_to_dict(r) for r in fast_growing[:15]],
+        "monthly": [],
+        "by_category": [],
+        "new_projects": [],
+        "explored": [],
+        "newly_discovered": [],
+    }
+
+    # 🔥 热门项目 · 按分类（日/周/月合并去重）
+    trending_merged, shown_repos = collect_trending_for_categories(trending_repos)
+    data["by_category"] = _build_category_groups(trending_merged, max_total=25, max_per_category=8)
+
+    # 🌱 新项目（今天/本周创建）
+    new_repos = []
+    for period in ["today", "this_week"]:
+        for repo in created_repos.get(period, []):
+            name = repo.get("full_name", "")
+            if not name or name in shown_repos:
+                continue
+            shown_repos.add(name)
+            new_repos.append(repo)
+    new_repos.sort(key=lambda r: r.get("stargazers_count", 0), reverse=True)
+    data["new_projects"] = _build_category_groups(new_repos, max_total=15, max_per_category=6)
+
+    # 🔍 探索发现（按策略分组）
+    strategy_groups = {}
+    for repo in explored_repos:
+        strategy = repo.get("_strategy", "其他")
+        strategy_groups.setdefault(strategy, []).append(repo)
+    for strategy, repos in strategy_groups.items():
+        projects = []
+        for repo in repos:
+            name = repo.get("full_name", "")
+            if name in shown_repos:
+                continue
+            shown_repos.add(name)
+            if len(projects) < 8:
+                projects.append(_repo_to_dict(repo))
+        if projects:
+            data["explored"].append({"strategy": strategy, "projects": projects})
+
+    # ✨ 新发现
+    fresh = [r for r in newly_discovered if r.get("full_name") not in shown_repos][:10]
+    data["newly_discovered"] = [_repo_to_dict(r) for r in fresh]
+
+    return data
+
+
+def save_report_json(data: Dict) -> str:
+    os.makedirs(REPORTS_DIR, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
+    filename = f"{timestamp}.json"
+    filepath = os.path.join(REPORTS_DIR, filename)
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"Report JSON saved to: {filepath}")
+    return filepath
+
+
 def main():
     date_str = datetime.now().strftime("%Y-%m-%d")
     print(f"Starting GitHub daily report for {date_str}")
@@ -290,9 +396,14 @@ def main():
     md_content = generate_markdown_report(trending_repos, created_repos, explored_repos, fast_growing, newly_discovered, date_str)
     report_path = save_report(md_content, date_str)
 
-    print("\nGenerating report index and RSS feed...")
+    print("\nGenerating structured JSON report...")
+    report_data = build_report_data(trending_repos, created_repos, explored_repos, fast_growing, newly_discovered, date_str)
+    save_report_json(report_data)
+
+    print("\nGenerating report index, RSS and JSON feeds...")
     generate_index(REPORTS_DIR)
     generate_rss(REPORTS_DIR)
+    generate_json_index(REPORTS_DIR)
 
     print("\nSending WeChat notification...")
     leaderboard = build_leaderboard(trending_repos)

@@ -1,3 +1,4 @@
+import json
 import os
 import re
 from datetime import datetime, timezone
@@ -5,6 +6,7 @@ from xml.sax.saxutils import escape
 
 REPO_URL = "https://github.com/laojiahuo2003/github-daily-report"
 RSS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "feed.xml")
+JSON_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "feed.json")
 INDEX_HEADER = "# 📜 历史报告索引\n\n> 每日 09:00 / 18:00（北京时间）自动更新 · [RSS 订阅](../feed.xml)\n\n"
 
 
@@ -112,7 +114,43 @@ def generate_rss(reports_dir: str, max_items: int = 10):
     print(f"RSS feed saved to: {RSS_FILE}")
 
 
+def read_report_json(filepath: str):
+    """读取单份结构化报告 JSON，损坏则返回 None"""
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def generate_json_index(reports_dir: str, max_items: int = 10):
+    """生成仓库根目录 feed.json：按天倒序的最新 N 份结构化报告"""
+    files = [f for f in os.listdir(reports_dir) if re.match(r"\d{4}-\d{2}-\d{2}_\d{2}-\d{2}\.json$", f)]
+    files = sorted(files, reverse=True)
+
+    seen_days, reports = set(), []
+    for f in files:
+        day = f[:10]
+        if day in seen_days:
+            continue
+        seen_days.add(day)
+        data = read_report_json(os.path.join(reports_dir, f))
+        if data:
+            reports.append(data)
+        if len(reports) >= max_items:
+            break
+
+    payload = {
+        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "reports": reports,
+    }
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False)
+    print(f"JSON feed saved to: {JSON_FILE} ({len(reports)} reports)")
+
+
 if __name__ == "__main__":
     reports_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports")
     generate_index(reports_dir)
     generate_rss(reports_dir)
+    generate_json_index(reports_dir)
