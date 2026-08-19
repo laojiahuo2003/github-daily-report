@@ -40,8 +40,8 @@ def report_summary(filepath: str, max_items: int = 15) -> str:
                 if line.startswith("|") and "](" in line:
                     cells = [c.strip() for c in line.strip("|").split("|")]
                     if len(cells) >= 4:
-                        # 排名 | 项目 | 增长 | 总⭐ |（有则带上语言、分类）
-                        lines.append(" | ".join(cells[:6]))
+                        # 排名 | 项目 | 增长 | 总⭐ |（有则带上语言、分类、简介）
+                        lines.append(" | ".join(cells[:7]))
                 if len(lines) >= max_items:
                     break
     except OSError:

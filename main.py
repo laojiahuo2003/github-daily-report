@@ -149,15 +149,17 @@ def generate_markdown_report(trending_repos: Dict[str, List[Dict]], created_repo
     # 📊 今日飙升榜
     if leaderboard:
         md += "## 📊 今日飙升榜\n\n"
-        md += "| 排名 | 项目 | 今日增长 | 总⭐ | 语言 | 分类 |\n"
-        md += "| --- | --- | --- | --- | --- | --- |\n"
+        md += "| 排名 | 项目 | 今日增长 | 总⭐ | 语言 | 分类 | 简介 |\n"
+        md += "| --- | --- | --- | --- | --- | --- | --- |\n"
         for i, repo in enumerate(leaderboard, 1):
             name = repo.get("full_name", "")
             url = repo.get("html_url", f"https://github.com/{name}")
             language = repo.get("language") or "-"
+            desc = (repo.get("description") or "").strip()
+            desc_cell = desc.replace("|", "/")[:80] if desc and desc != "." else "-"
             md += (f"| {i} | [{name}]({url}) | 🔺{repo_growth(repo)} "
                    f"| {format_stars(repo.get('stargazers_count', 0))} "
-                   f"| {language} | {categorize_repo(repo)} |\n")
+                   f"| {language} | {categorize_repo(repo)} | {desc_cell} |\n")
         md += "\n"
 
     # 🚀 快速增长项目（周增长 50+，历史追踪发现，可能不在趋势榜上）

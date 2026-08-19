@@ -5,24 +5,24 @@
     <link>https://github.com/laojiahuo2003/github-daily-report</link>
     <description>每日 GitHub 趋势、飙升榜与新项目发现（09:00 / 18:00 更新）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Aug 2026 06:09:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 06:23:10 GMT</lastBuildDate>
     <item>
       <title>GitHub 每日报告 - 2026-08-19</title>
-      <link>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-08-19_13-56.md</link>
-      <guid>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-08-19_13-56.md</guid>
+      <link>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-08-19_14-23.md</link>
+      <guid>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-08-19_14-23.md</guid>
       <description><![CDATA[
-1 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 🔺2304 | 109k | Python | 🤖 AI / LLM
-2 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | 🔺1005 | 464.9k | Python | 📦 其他
-3 | [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | 🔺730 | 29.4k | Python | 🤖 AI / LLM
-4 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 🔺648 | 2.9k | Rust | 🤖 AI / LLM
-5 | [agalwood/Motrix](https://github.com/agalwood/Motrix) | 🔺609 | 53.8k | TypeScript | 📦 其他
-6 | [genlayerlabs/genlayer-project-boilerplate](https://github.com/genlayerlabs/genlayer-project-boilerplate) | 🔺535 | 16k | TypeScript | 📦 其他
-7 | [jundot/omlx](https://github.com/jundot/omlx) | 🔺370 | 19.5k | Python | 🤖 AI / LLM
-8 | [basecamp/omarchy](https://github.com/basecamp/omarchy) | 🔺356 | 26.5k | Shell | ⚙️ 系统 / 网络
-9 | [chaitanyagiri/munder-difflin](https://github.com/chaitanyagiri/munder-difflin) | 🔺306 | 2.2k | TypeScript | 🤖 AI / LLM
-10 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 🔺213 | 29.6k | Python | 🤖 AI / LLM
-11 | [NawfalMotii79/PLFM_RADAR](https://github.com/NawfalMotii79/PLFM_RADAR) | 🔺192 | 24.4k | PLSQL | 📦 其他
-12 | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) | 🔺192 | 84.9k | TypeScript | 📦 其他
+1 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 🔺2304 | 109k | Python | 🤖 AI / LLM | 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyw
+2 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | 🔺1005 | 464.9k | Python | 📦 其他 | A collective list of free APIs
+3 | [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | 🔺730 | 29.4k | Python | 🤖 AI / LLM | 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITR
+4 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 🔺648 | 2.9k | Rust | 🤖 AI / LLM | Solution for long term memory for agent coding CLIs and to facilitate handoff be
+5 | [agalwood/Motrix](https://github.com/agalwood/Motrix) | 🔺609 | 53.8k | TypeScript | 📦 其他 | A full-featured download manager.
+6 | [genlayerlabs/genlayer-project-boilerplate](https://github.com/genlayerlabs/genlayer-project-boilerplate) | 🔺535 | 16k | TypeScript | 📦 其他 | -
+7 | [jundot/omlx](https://github.com/jundot/omlx) | 🔺370 | 19.5k | Python | 🤖 AI / LLM | LLM inference server with continuous batching & SSD caching for Apple Silicon —
+8 | [basecamp/omarchy](https://github.com/basecamp/omarchy) | 🔺356 | 26.5k | Shell | ⚙️ 系统 / 网络 | Beautiful, Modern & Opinionated Linux
+9 | [chaitanyagiri/munder-difflin](https://github.com/chaitanyagiri/munder-difflin) | 🔺306 | 2.2k | TypeScript | 🤖 AI / LLM | local multi-agent harness
+10 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 🔺213 | 29.6k | Python | 🤖 AI / LLM | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG
+11 | [NawfalMotii79/PLFM_RADAR](https://github.com/NawfalMotii79/PLFM_RADAR) | 🔺192 | 24.4k | PLSQL | 📦 其他 | Open-source, low-cost 10.5 GHz PLFM phased array RADAR system
+12 | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) | 🔺192 | 84.9k | TypeScript | 📦 其他 | The open-source CapCut alternative
       ]]></description>
     </item>
     <item>
