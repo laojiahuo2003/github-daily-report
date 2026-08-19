@@ -64,22 +64,31 @@ def generate_index(reports_dir: str, max_days: int = 60):
     print(f"Index saved to: {index_path}")
 
 
-def generate_rss(reports_dir: str, max_items: int = 15):
-    """生成仓库根目录 feed.xml，供 RSS 阅读器订阅"""
+def read_report(filepath: str) -> str:
+    """读取完整报告 markdown（供 content:encoded 使用）"""
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            return f.read().replace("]]>", "]]&gt;")
+    except OSError:
+        return ""
+
+
+def generate_rss(reports_dir: str, max_items: int = 10):
+    """生成仓库根目录 feed.xml，供 RSS 阅读器与博客日报页订阅"""
     files = latest_report_per_day(list_report_files(reports_dir))[:max_items]
 
     items = []
     for f in files:
         day = f[:10]
         link = f"{REPO_URL}/blob/main/reports/{f}"
-        summary = report_summary(os.path.join(reports_dir, f))
+        content = read_report(os.path.join(reports_dir, f)) or report_summary(os.path.join(reports_dir, f))
         items.append(
             "    <item>\n"
             f"      <title>GitHub 每日报告 - {day}</title>\n"
             f"      <link>{escape(link)}</link>\n"
             f"      <guid>{escape(link)}</guid>\n"
             "      <description><![CDATA[\n"
-            f"{summary}\n"
+            f"{content}\n"
             "      ]]></description>\n"
             "    </item>"
         )
