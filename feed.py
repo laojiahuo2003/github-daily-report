@@ -28,7 +28,7 @@ def latest_report_per_day(files: list) -> list:
     return result
 
 
-def report_summary(filepath: str, max_items: int = 5) -> str:
+def report_summary(filepath: str, max_items: int = 15) -> str:
     """提取报告开头的飙升榜表格行作为摘要（纯文本）"""
     lines = []
     try:
@@ -40,7 +40,8 @@ def report_summary(filepath: str, max_items: int = 5) -> str:
                 if line.startswith("|") and "](" in line:
                     cells = [c.strip() for c in line.strip("|").split("|")]
                     if len(cells) >= 4:
-                        lines.append(" | ".join(cells[:4]))
+                        # 排名 | 项目 | 增长 | 总⭐ |（有则带上语言、分类）
+                        lines.append(" | ".join(cells[:6]))
                 if len(lines) >= max_items:
                     break
     except OSError:
