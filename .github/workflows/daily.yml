@@ -1,9 +1,11 @@
 name: GitHub Daily Report
 
-# 已迁移：生成器移至 laojiahuo2003.github.io 仓库的 daily/ 目录，
-# 定时生成由该仓库的 daily.yml 接管。本仓库保留作历史档案，
-# workflow_dispatch 保留以备手动运行。
+# 本仓库与博客仓库（laojiahuo2003.github.io 的 daily/）各有一份生成器，
+# 独立运行互不影响：各自生成、各自提交，数据无共享。
 on:
+  schedule:
+    - cron: '0 1 * * *'   # 中国时间 09:00
+    - cron: '0 10 * * *'  # 中国时间 18:00
   workflow_dispatch:
 
 jobs:
