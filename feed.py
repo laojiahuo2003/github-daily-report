@@ -1,6 +1,6 @@
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from xml.sax.saxutils import escape
 
 REPO_URL = "https://github.com/laojiahuo2003/github-daily-report"
@@ -29,15 +29,17 @@ def latest_report_per_day(files: list) -> list:
 
 
 def report_summary(filepath: str, max_items: int = 5) -> str:
-    """提取报告开头的飙升榜行作为摘要（纯文本）"""
+    """提取报告开头的飙升榜表格行作为摘要（纯文本）"""
     lines = []
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
-                if line.startswith("|") and "][" in line:
-                    # 表格行转成简洁文本
+                # 表格数据行：以 | 开头且含 markdown 链接（表头和分隔行没有链接）
+                if line.startswith("|") and "](" in line:
                     cells = [c.strip() for c in line.strip("|").split("|")]
+                    # [name](url) -> name
+                    cells = [re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", c) for c in cells]
                     if len(cells) >= 4:
                         lines.append(" | ".join(cells[:4]))
                 if len(lines) >= max_items:
@@ -82,7 +84,7 @@ def generate_rss(reports_dir: str, max_items: int = 15):
             "    </item>"
         )
 
-    now = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")
+    now = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     rss = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0">\n'
