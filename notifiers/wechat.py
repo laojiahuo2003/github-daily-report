@@ -40,29 +40,47 @@ def send_pushplus_message(title: str, content: str, template: str = "html") -> b
         return False
 
 def format_repos_for_wechat(trending_repos: Dict[str, List[Dict]], created_repos: Dict[str, List[Dict]],
-                            explored_repos: List[Dict], fast_growing: List[Dict], newly_discovered: List[Dict]) -> str:
+                            explored_repos: List[Dict], fast_growing: List[Dict], newly_discovered: List[Dict],
+                            leaderboard: List[Dict] = None) -> str:
     html = """
     <html>
     <head>
         <style>
             body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
             .section { margin-bottom: 20px; }
-            .section-title { font-size: 18px; font-weight: bold; color: #24292e; 
+            .section-title { font-size: 18px; font-weight: bold; color: #24292e;
                            border-bottom: 2px solid #0366d6; padding-bottom: 5px; margin-bottom: 10px; }
             .repo { margin-bottom: 15px; padding: 10px; background: #f6f8fa; border-radius: 6px; }
             .repo-name { font-weight: bold; color: #0366d6; text-decoration: none; }
             .repo-name:hover { text-decoration: underline; }
             .repo-meta { font-size: 12px; color: #586069; margin-top: 5px; }
             .repo-desc { color: #24292e; margin-top: 5px; font-size: 14px; }
-            .tag { display: inline-block; padding: 2px 6px; background: #e1e4e8; 
+            .tag { display: inline-block; padding: 2px 6px; background: #e1e4e8;
                   border-radius: 3px; font-size: 11px; margin-right: 5px; }
             .growth-tag { background: #d4edda; color: #155724; }
             .strategy-tag { background: #fff5b1; }
+            table.rank { border-collapse: collapse; width: 100%; margin-bottom: 10px; }
+            table.rank th, table.rank td { border: 1px solid #e1e4e8; padding: 6px 8px; font-size: 13px; text-align: left; }
+            table.rank th { background: #f6f8fa; }
+            table.rank a { color: #0366d6; text-decoration: none; }
         </style>
     </head>
     <body>
     """
-    
+
+    if leaderboard:
+        html += '<div class="section">'
+        html += '<div class="section-title">📊 今日飙升榜</div>'
+        html += '<table class="rank"><tr><th>#</th><th>项目</th><th>今日🔺</th><th>总⭐</th></tr>'
+        for i, repo in enumerate(leaderboard[:10], 1):
+            name = repo.get("full_name", "")
+            url = repo.get("html_url", f"https://github.com/{name}")
+            growth = repo.get("_stars_gained", 0) or repo.get("_daily_growth", 0)
+            stars = repo.get("stargazers_count", 0)
+            html += (f'<tr><td>{i}</td><td><a href="{url}">{name}</a></td>'
+                     f'<td>+{growth}</td><td>{stars}</td></tr>')
+        html += '</table></div>'
+
     if fast_growing:
         html += '<div class="section">'
         html += '<div class="section-title">🚀 快速增长项目</div>'
@@ -198,9 +216,10 @@ def format_single_repo_html(repo: Dict) -> str:
     return html
 
 def send_daily_report(trending_repos: Dict[str, List[Dict]], created_repos: Dict[str, List[Dict]],
-                      explored_repos: List[Dict], fast_growing: List[Dict], newly_discovered: List[Dict], date_str: str) -> bool:
+                      explored_repos: List[Dict], fast_growing: List[Dict], newly_discovered: List[Dict],
+                      date_str: str, leaderboard: List[Dict] = None) -> bool:
     title = f"GitHub 每日报告 - {date_str}"
-    content = format_repos_for_wechat(trending_repos, created_repos, explored_repos, fast_growing, newly_discovered)
+    content = format_repos_for_wechat(trending_repos, created_repos, explored_repos, fast_growing, newly_discovered, leaderboard)
     return send_pushplus_message(title, content, template="html")
 
 if __name__ == "__main__":

@@ -29,23 +29,33 @@ def fetch_trending_by_period(since: str = "daily") -> List[Dict]:
                 repo_link = article.select_one("h2 a")
                 if not repo_link:
                     continue
-                    
+
                 full_name = repo_link.get("href", "").strip("/")
-                
+
                 desc_elem = article.select_one("p")
                 description = desc_elem.get_text(strip=True) if desc_elem else ""
-                
+
                 stars_elem = article.select_one('[href$="/stargazers"]')
                 stars = stars_elem.get_text(strip=True).replace(",", "") if stars_elem else "0"
                 stars = parse_number(stars)
-                
+
                 forks_elem = article.select_one('[href$="/network/members"]')
                 forks = forks_elem.get_text(strip=True).replace(",", "") if forks_elem else "0"
                 forks = parse_number(forks)
-                
+
                 language_elem = article.select_one('[itemprop="programmingLanguage"]')
                 language = language_elem.get_text(strip=True) if language_elem else ""
-                
+
+                # 页面上的 "1,234 stars today/this week/this month" 增长数据
+                stars_gained = 0
+                gained_elem = article.select_one("span.d-inline-block.float-sm-right")
+                if gained_elem:
+                    gained_text = gained_elem.get_text(strip=True)
+                    for token in gained_text.replace(",", "").split():
+                        if token.isdigit():
+                            stars_gained = int(token)
+                            break
+
                 repos.append({
                     "full_name": full_name,
                     "description": description,
@@ -53,7 +63,8 @@ def fetch_trending_by_period(since: str = "daily") -> List[Dict]:
                     "forks_count": forks,
                     "language": language,
                     "html_url": f"https://github.com/{full_name}",
-                    "_period": since
+                    "_period": since,
+                    "_stars_gained": stars_gained
                 })
             except Exception as e:
                 continue
@@ -78,25 +89,20 @@ def parse_number(s: str) -> int:
 def fetch_all_trending() -> Dict[str, List[Dict]]:
     periods = {
         "daily": "今日热门",
-        "weekly": "本周热门", 
+        "weekly": "本周热门",
         "monthly": "本月热门"
     }
-    
+
     result = {}
-    seen_names = set()
-    
+
     for period, label in periods.items():
         repos = fetch_trending_by_period(since=period)
-        period_repos = []
-        
+        # 每个周期保留完整榜单（跨周期去重在报告生成时统一做，
+        # 之前在这里去重会导致周榜/月榜缺项，不是真实排名）
         for repo in repos:
-            if repo["full_name"] not in seen_names:
-                seen_names.add(repo["full_name"])
-                repo["_period_label"] = label
-                period_repos.append(repo)
-        
-        result[period] = period_repos
-    
+            repo["_period_label"] = label
+        result[period] = repos
+
     return result
 
 def format_trending_repo(repo: Dict) -> str:
