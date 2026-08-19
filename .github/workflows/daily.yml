@@ -50,3 +50,8 @@ jobs:
           git pull --rebase
           git stash pop || true
           git push
+
+      - name: Purge jsdelivr CDN cache
+        run: |
+          sleep 5
+          curl -sf "https://purge.jsdelivr.net/gh/laojiahuo2003/github-daily-report@main/feed.xml" || true
