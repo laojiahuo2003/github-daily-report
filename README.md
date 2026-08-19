@@ -1,5 +1,7 @@
 # GitHub 每日报告 📊
 
+> **📦 已迁移（2026-08-20）**：生成器已合并进博客仓库 [laojiahuo2003.github.io](https://github.com/laojiahuo2003/laojiahuo2003.github.io) 的 [`daily/`](https://github.com/laojiahuo2003/laojiahuo2003.github.io/tree/main/daily) 目录，日报在博客上[每日自动更新](https://laojiahuo2003.github.io/daily/)。本仓库保留作 2026-04 至 2026-08 的历史报告档案，不再更新。
+
 > 自动发现 GitHub 每日趋势、飙升项目与新兴开源项目，每天 09:00 / 18:00（北京时间）生成中文报告
 
 [![Daily Report](https://github.com/laojiahuo2003/github-daily-report/actions/workflows/daily.yml/badge.svg)](https://github.com/laojiahuo2003/github-daily-report/actions/workflows/daily.yml)
