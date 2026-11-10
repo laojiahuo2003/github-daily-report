@@ -5,7 +5,342 @@
     <link>https://github.com/laojiahuo2003/github-daily-report</link>
     <description>每日 GitHub 趋势、飙升榜与新项目发现（09:00 / 18:00 更新）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Nov 2026 07:56:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 17:25:59 GMT</lastBuildDate>
+    <item>
+      <title>GitHub 每日报告 - 2026-11-11</title>
+      <link>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-11-11_01-25.md</link>
+      <guid>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-11-11_01-25.md</guid>
+      <description><![CDATA[
+# GitHub 每日报告 - 2026-11-11
+
+---
+
+## 🏆 今日最佳项目
+
+**[meta/astryx](https://github.com/meta/astryx)**
+
+- ⭐ 总星标：22.2k
+- 🔺 今日增长：+3111
+- 💻 语言：TypeScript
+- 🗂️ 分类：🤖 AI / LLM
+- 📝 简介：An open source design system that's fully customizable and agent ready
+
+## 📊 今日飙升榜
+
+| 排名 | 项目 | 今日增长 | 总⭐ | 语言 | 分类 | 简介 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | [meta/astryx](https://github.com/meta/astryx) | 🔺3111 | 22.2k | TypeScript | 🤖 AI / LLM | An open source design system that's fully customizable and agent ready |
+| 2 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 🔺2387 | 108.6k | Python | 📦 其他 | Hunt down social media accounts by username across social networks |
+| 3 | [anthropics/skills](https://github.com/anthropics/skills) | 🔺1676 | 192k | Python | 🤖 AI / LLM | Public repository for Agent Skills |
+| 4 | [mattpocock/skills](https://github.com/mattpocock/skills) | 🔺1223 | 320.6k | Shell | 📦 其他 | Skills for Real Engineers. Straight from my .agents directory. |
+| 5 | [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | 🔺792 | 6.5k | Python | 🤖 AI / LLM | Configure and automate Home Assistant with Claude, ChatGPT, and other AI assista |
+| 6 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | 🔺775 | 49k | Rust | 🤖 AI / LLM | Browser automation CLI for AI agents |
+| 7 | [anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) | 🔺530 | 20.4k | Python | 🤖 AI / LLM | A collection of projects designed to help developers quickly get started with bu |
+| 8 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 🔺465 | 115k | JavaScript | 🤖 AI / LLM | Production-grade engineering skills for AI coding agents. |
+| 9 | [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | 🔺453 | 17.2k | C++ | 📦 其他 | Multi-Joint dynamics with Contact. A general purpose physics simulator. |
+| 10 | [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) | 🔺374 | 6.1k | TypeScript | 📦 其他 | A context-compression plugin for month-long single sessions (billions of tokens) |
+| 11 | [tokio-rs/topcoat](https://github.com/tokio-rs/topcoat) | 🔺192 | 6.7k | Rust | 🛠️ 开发工具 | A batteries-included framework for building web apps |
+| 12 | [we-promise/sure](https://github.com/we-promise/sure) | 🔺184 | 11.7k | Ruby | 📦 其他 | The personal finance app for everyone (by everyone) |
+
+## 🔥 热门项目 · 按分类
+
+### 🤖 AI / LLM
+
+- **[meta/astryx](https://github.com/meta/astryx)** ⭐22.2k `今日` `TypeScript`
+  > An open source design system that's fully customizable and agent ready
+- **[anthropics/skills](https://github.com/anthropics/skills)** ⭐192k `今日` `Python`
+  > Public repository for Agent Skills
+- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** ⭐115k `今日` `JavaScript`
+  > Production-grade engineering skills for AI coding agents.
+- **[anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts)** ⭐20.4k `今日` `Python`
+  > A collection of projects designed to help developers quickly get started with building deployable applications using the
+- **[homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp)** ⭐6.5k `今日` `Python`
+  > Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.
+- **[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)** ⭐49k `今日` `Rust`
+  > Browser automation CLI for AI agents
+- **[NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology)** ⭐11.4k `本周` `Python`
+  > Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables determinis
+- **[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)** ⭐21.2k `本周` `Rust`
+  > Computer use CLI for AI agents
+
+### ⚡ 自动化 / 效率
+
+- **[milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)** ⭐20.5k `本周` `TypeScript`
+  > Open-source Grok Bot alternative with a virtual machine that bots can use
+- **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)** ⭐101k `本周` `Python`
+  > 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, jo
+
+### 🛠️ 开发工具
+
+- **[tokio-rs/topcoat](https://github.com/tokio-rs/topcoat)** ⭐6.7k `今日` `Rust`
+  > A batteries-included framework for building web apps
+- **[NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)** ⭐99.3k `本月` `Java`
+  > Ghidra is a software reverse engineering (SRE) framework
+
+### ⚙️ 系统 / 网络
+
+- **[anomalyco/hex](https://github.com/anomalyco/hex)** ⭐6.1k `本周` `Rust`
+  > Local voice dictation for mac, windows and linux
+
+### 📦 其他
+
+- **[google-deepmind/mujoco](https://github.com/google-deepmind/mujoco)** ⭐17.2k `今日` `C++`
+  > Multi-Joint dynamics with Contact. A general purpose physics simulator.
+- **[we-promise/sure](https://github.com/we-promise/sure)** ⭐11.7k `今日` `Ruby`
+  > The personal finance app for everyone (by everyone)
+- **[sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)** ⭐108.6k `今日` `Python`
+  > Hunt down social media accounts by username across social networks
+- **[ranxianglei/billion-context](https://github.com/ranxianglei/billion-context)** ⭐6.1k `今日` `TypeScript`
+  > A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context 
+- **[mattpocock/skills](https://github.com/mattpocock/skills)** ⭐320.6k `今日` `Shell`
+  > Skills for Real Engineers. Straight from my .agents directory.
+- **[pingdotgg/t3code](https://github.com/pingdotgg/t3code)** ⭐55.4k `本周` `TypeScript`
+  > 无描述
+- **[morluto/rea](https://github.com/morluto/rea)** ⭐449.3k `本月` `TypeScript`
+  > Reverse engineer anything with agents, from app behavior down to native binaries.
+- **[heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)** ⭐82.2k `本月` `TypeScript`
+  > Write HTML. Render video. Built for agents.
+
+## 🌱 新项目速递 · 按分类（近 7 天创建）
+
+### 🤖 AI / LLM
+
+- **[IainKay/ram-altman](https://github.com/IainKay/ram-altman)** ⭐1.8k 📅2026-11-05 `Shell`
+  > Monitors your RAM and reports any "quite terrible" unused capacity directly to the CEO of OpenAI.
+- **[DIYgod/pinky](https://github.com/DIYgod/pinky)** ⭐1.6k 📅2026-11-06 `Go`
+  > Let AI agents use your phone, with you in the loop.
+- **[voyager-so/vork](https://github.com/voyager-so/vork)** ⭐1.3k 📅2026-11-05 `Rust`
+  > Headless 3D and VFX engine for agents. Research preview.
+- **[JosssphZhou/poki](https://github.com/JosssphZhou/poki)** ⭐899 📅2026-11-05 `Swift`
+  > Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.
+- **[majorminorlabs/hermes-voice](https://github.com/majorminorlabs/hermes-voice)** ⭐639 📅2026-11-05 `Python`
+  > Talk to a Hermes Agent profile through Home Assistant Assist
+- **[dabingfy-dot/solo-to-team-skills](https://github.com/dabingfy-dot/solo-to-team-skills)** ⭐541 📅2026-11-07
+  > Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 
+
+### 🔒 网络安全
+
+- **[Kianuni/Erosion-CN](https://github.com/Kianuni/Erosion-CN)** ⭐923 📅2026-11-10 `Swift`
+  > iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）
+- **[abhijot11/fabfilter-total](https://github.com/abhijot11/fabfilter-total)** ⭐481 📅2026-11-06 `HTML`
+  > Fabfilter Total 2026 security assessment toolkit with full feature validation and installer verifica
+
+### ⚡ 自动化 / 效率
+
+- **[thiagoaureliomartins-programador/chief-architect-premier](https://github.com/thiagoaureliomartins-programador/chief-architect-premier)** ⭐482 📅2026-11-06 `Rust`
+  > Chief Architect Premier 2026: Pre-Configured Desktop Edition with All Features Enabled
+- **[AbhramJohn/instagram-engagement-bot](https://github.com/AbhramJohn/instagram-engagement-bot)** ⭐482 📅2026-11-06 `HTML`
+  > Community-driven Instagram Liker Bot with advanced automation for desktop
+- **[mahmoudtawfik1998/secure-pdf-document-processor](https://github.com/mahmoudtawfik1998/secure-pdf-document-processor)** ⭐481 📅2026-11-06 `HTML`
+  > Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop
+- **[RolandoV3/metatrader-5-bot](https://github.com/RolandoV3/metatrader-5-bot)** ⭐481 📅2026-11-06 `TypeScript`
+  > Community-driven MetaTrader 5 bot with full features ready for desktop use
+
+### 🛠️ 开发工具
+
+- **[huamidev/GestaltX](https://github.com/huamidev/GestaltX)** ⭐4.5k 📅2026-11-09 `Swift`
+  > An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages
+- **[jhaizhou-ops/S2Arm](https://github.com/jhaizhou-ops/S2Arm)** ⭐2.3k 📅2026-11-08 `C#`
+  > Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one 
+- **[lxe/phoneuse](https://github.com/lxe/phoneuse)** ⭐560 📅2026-11-07 `Python`
+  > See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI an
+
+---
+
+## 🔍 探索发现
+
+*按语言和主题探索的新项目*
+
+### Python 新项目
+
+- **[Nanoutrolley/roblox-studio-mcp](https://github.com/Nanoutrolley/roblox-studio-mcp)** ⭐283 📅2026-11-09 `Python`
+  > Model Context Protocol (MCP) server for Roblox Studio. Connect AI assistants (Claude, Cursor, Cline) to read object tree
+- **[Sectionsereclaim/discord-auto-quest](https://github.com/Sectionsereclaim/discord-auto-quest)** ⭐279 📅2026-11-09 `Python`
+  > Advanced activity automation and process manager for Discord. Automatically handles game, video, and stream tasks in the
+- **[ridgecobblerslide/windows-animated-wallpapers](https://github.com/ridgecobblerslide/windows-animated-wallpapers)** ⭐279 📅2026-11-09 `Python`
+  > High-quality animated and live wallpapers for Windows 10 and 11. Smooth 60 FPS animations, low CPU usage, 4K support. Op
+- **[Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer)** ⭐274 📅2026-11-09 `Python`
+  > STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical 
+- **[Danuse84/Exodus-Fake-Balance](https://github.com/Danuse84/Exodus-Fake-Balance)** ⭐254 📅2026-11-05 `Python`
+  > Wallet UI simulation tool for BTC, ETH, SOL, XRP, and 200+ assets. Customize displayed balances in a controlled demo env
+- **[sentinelsoldierprize/Minecraft-AFK-Bot](https://github.com/sentinelsoldierprize/Minecraft-AFK-Bot)** ⭐279 📅2026-11-07 `Python`
+  > Lightweight Minecraft Anti-AFK bot with a web dashboard. Keeps your account online 24/7, simulates activity to avoid kic
+- **[MuseumCassowaryCarve/twitch-drops-miner](https://github.com/MuseumCassowaryCarve/twitch-drops-miner)** ⭐279 📅2026-11-08 `Python`
+  > Auto-farm Twitch drops in the background. Claim rewards, switch channels, and mine timed drops with zero video download.
+- **[farhatullah0006-art/rx-11-audio-editor-config](https://github.com/farhatullah0006-art/rx-11-audio-editor-config)** ⭐480 📅2026-11-06 `Python`
+  > rx-11-audio-editor config: full standalone installer and dotfiles for professional audio editing
+
+### Topic: machine-learning
+
+- **[liujiaqi2024/Free-ClaudeOpus-5.5](https://github.com/liujiaqi2024/Free-ClaudeOpus-5.5)** ⭐72 📅2026-11-09
+  > 无描述
+- **[Turboheartblaze/resp-fortuna-vision-public-preview](https://github.com/Turboheartblaze/resp-fortuna-vision-public-preview)** ⭐40 📅2026-11-07
+  > 👁️ FortunaVision — chart-first market + treasury workstation, static, no keys: TradingView's open-source chart engine be
+- **[XploraHub/awesome-mineral-exploration](https://github.com/XploraHub/awesome-mineral-exploration)** ⭐30 📅2026-11-05
+  > A curated list of open-source software for mineral exploration: geophysics, geological modelling, drillholes, geostatist
+- **[ilyautov/llm-manual-lab](https://github.com/ilyautov/llm-manual-lab)** ⭐7 📅2026-11-09 `Python`
+  > Бесплатный учебник «Теория LLM и практика AI-лаборатории» и лаборатория на TypeScript
+- **[notaaaronfr/koel](https://github.com/notaaaronfr/koel)** ⭐5 📅2026-11-08 `Python`
+  > Open trust checker for cancer mutation scores: how much evidence AlphaMissense and ESM1b earn in oncogenes vs tumour sup
+- **[prabeakarve/microgpt](https://github.com/prabeakarve/microgpt)** ⭐51 📅2026-11-05 `Python`
+  > A from-scratch, dependency-free GPT implementation in pure NumPy: byte-level tokenizer, multi-head self-attention, Adam 
+- **[conceptcountry/weight-space-programming](https://github.com/conceptcountry/weight-space-programming)** ⭐7 📅2026-11-08 `Typst`
+  > Gradient-free weight editing reduces overthinking in Qwen3.8-27B — analysis code and evaluation artifacts
+- **[mwell70/node2vec](https://github.com/mwell70/node2vec)** ⭐50 📅2026-11-05 `Python`
+  > Python implementation of node2vec: scalable feature learning for networks with biased random walks and skip-gram.
+
+### Rust 新项目
+
+- **[PlateParrotTerminal/lag-doctor](https://github.com/PlateParrotTerminal/lag-doctor)** ⭐447 📅2026-11-08 `Rust`
+  > Game ping, jitter & packet loss monitor: finds who causes your lag
+- **[BeeCaptivate/pc-cleanup-optimizer](https://github.com/BeeCaptivate/pc-cleanup-optimizer)** ⭐245 📅2026-11-08 `Rust`
+  > Free open source PC cleaner for Windows: disk space, RAM, CPU, startup
+- **[rippelz/rustudio](https://github.com/rippelz/rustudio)** ⭐83 📅2026-11-09 `Rust`
+  > A native Linux Roblox Studio, written in Rust
+- **[bea4dev/shoji-bar-4](https://github.com/bea4dev/shoji-bar-4)** ⭐71 📅2026-11-10 `Rust`
+  > A Wayland shell with Material Design 3 Expressive
+- **[SoldierMultiply/footstep-equalizer](https://github.com/SoldierMultiply/footstep-equalizer)** ⭐159 📅2026-11-08 `Rust`
+  > Footstep equalizer for FPS games: auto EQ for Valorant, CS2, Apex
+- **[AutocratMinaret/valorant-ai-clip-editor](https://github.com/AutocratMinaret/valorant-ai-clip-editor)** ⭐179 📅2026-11-08 `Rust`
+  > AI Valorant clip editor and montage maker with beat sync and NVENC
+- **[ToneProtectorSolve48/drift-doctor](https://github.com/ToneProtectorSolve48/drift-doctor)** ⭐144 📅2026-11-08 `Rust`
+  > Stick drift test and fix for Windows: gamepad tester, deadzone finder
+- **[basinshinobiend/wow-undercut-sniper](https://github.com/basinshinobiend/wow-undercut-sniper)** ⭐104 📅2026-11-08 `Rust`
+  > Snipe WoW Forever auction deals before anyone else: buys low, posts high, undercuts for you. Free Windows app.
+
+### Topic: productivity
+
+- **[yogeshpaliyal/Halo](https://github.com/yogeshpaliyal/Halo)** ⭐6 📅2026-11-09 `Kotlin`
+  > The one-thumb app switcher for Android. A floating edge bubble: hold, slide to an app on a radial menu of favourites and
+- **[DarkLian/WinScreen](https://github.com/DarkLian/WinScreen)** ⭐5 📅2026-11-07 `C#`
+  > A lightweight, free, open-source Windows utility featuring advanced interactive Picture-in-Picture with application reli
+- **[ArduusLabs/wilfred](https://github.com/ArduusLabs/wilfred)** ⭐7 📅2026-11-10 `JavaScript`
+  > A small always-on-top butler that tells you, at a glance, what every Claude Code session in the Claude desktop app is do
+- **[adsorgcn/DeepSeekHarness](https://github.com/adsorgcn/DeepSeekHarness)** ⭐7 📅2026-11-05 `Python`
+  > iLang DSH 工具包：面向 DeepSeek Harness 的开源工具包，提供持久本地记忆、新手教程、一键安装和技能库。支持 Windows、macOS、Linux，可走 Gitee 国内镜像。基于 iLang 与 Mem-Fore
+- **[maktub-ai/mandala](https://github.com/maktub-ai/mandala)** ⭐6 📅2026-11-08 `TypeScript`
+  > The AI control room for multithreaded work. Bring the AI CLIs you already use (Claude Code, Codex, Kimi and more) and gi
+- **[arxhr007/margin](https://github.com/arxhr007/margin)** ⭐11 📅2026-11-07 `Rust`
+  > Turn the edges and corners of your touchpad into volume, brightness, seek, Alt+Tab and custom shortcut controls. A tiny 
+- **[romabmstu/polka](https://github.com/romabmstu/polka)** ⭐5 📅2026-11-07 `Swift`
+  > Your MacBook’s notch, finally useful: tabs from any browser, VPNs, music, calendar, translator and clipboard in one pane
+- **[Mahdi-Ai-Agent/synapse-os](https://github.com/Mahdi-Ai-Agent/synapse-os)** ⭐9 📅2026-11-05 `TypeScript`
+  > Synapse — the second brain that organizes itself: a local Markdown vault, an AI brain on your own Claude or ChatGPT subs
+
+### TypeScript 新项目
+
+- **[TomyJan/SnowLuma](https://github.com/TomyJan/SnowLuma)** ⭐245 📅2026-11-09 `TypeScript`
+  > Next Remote Protocol Framework.
+- **[rdeepak-wq121/quicken-deluxe-installer](https://github.com/rdeepak-wq121/quicken-deluxe-installer)** ⭐479 📅2026-11-06 `TypeScript`
+  > Quicken Deluxe Desktop Installer with Full Feature Set Enabled
+- **[tss878/delta-executor-toolkit](https://github.com/tss878/delta-executor-toolkit)** ⭐479 📅2026-11-06 `TypeScript`
+  > Delta Executor for PC: Full Working Installer with All Tools Pre-Configured
+- **[uchihamx999-beep/imei-repair-toolkit](https://github.com/uchihamx999-beep/imei-repair-toolkit)** ⭐479 📅2026-11-06 `TypeScript`
+  > IMEI Repair 2026: Standalone Installer and Complete Setup for Device Repair Solutions
+- **[ebtsamalhakmy-sketch/desktop-backup-suite](https://github.com/ebtsamalhakmy-sketch/desktop-backup-suite)** ⭐479 📅2026-11-06 `TypeScript`
+  > Aomei Backupper 2026: Full-Feature Desktop Backup and Recovery Suite
+- **[utkarshryanite25-a11y/sony-vegas-pro-desktop](https://github.com/utkarshryanite25-a11y/sony-vegas-pro-desktop)** ⭐480 📅2026-11-06 `TypeScript`
+  > Sony Vegas Pro 2026 standalone setup with pre-installed professional video editing and VFX tools
+- **[Paulinho182/hitfilm-desktop-installer](https://github.com/Paulinho182/hitfilm-desktop-installer)** ⭐480 📅2026-11-06 `TypeScript`
+  > HitFilm: Fully Featured Desktop Video Editing and VFX Suite
+- **[YusufCeng1z/ding](https://github.com/YusufCeng1z/ding)** ⭐418 📅2026-11-05 `TypeScript`
+  > Toasts with real spring physics. One toast that morphs in place. No dependencies. React, Svelte, Vue and plain DOM.
+
+### Go 新项目
+
+- **[HolyArrs/HolyArrs](https://github.com/HolyArrs/HolyArrs)** ⭐470 📅2026-11-09 `Go`
+  > One self-hosted app for your shows, movies and music.
+- **[yanstd888/9routerx](https://github.com/yanstd888/9routerx)** ⭐58 📅2026-11-07 `Go`
+  > 9RouterX (9R Next Go Generation): Single-binary Go AI router, LLM gateway & 20-40% token saver. Route Claude Code, Curso
+- **[manjushree-iyer/soundpad-audio-suite](https://github.com/manjushree-iyer/soundpad-audio-suite)** ⭐480 📅2026-11-06 `Go`
+  > Soundpad: Advanced Audio Processing for Professional DAW Workflows
+- **[lobehub/lobe-mygo](https://github.com/lobehub/lobe-mygo)** ⭐218 📅2026-11-08 `Go`
+  > 🍭 Lobe MyGo - the UI kit for native Go apps: Lobe UI design language for MyGo, drawn on the GPU in pure Go
+- **[21stware/bowel](https://github.com/21stware/bowel)** ⭐404 📅2026-11-07 `Go`
+  > Bowel is a mihomo client for macOS, Windows, Linux and Android.
+- **[failsafe-security/artex](https://github.com/failsafe-security/artex)** ⭐109 📅2026-11-10 `Go`
+  > Source-built, locally bound FailSafe distribution of ARTEX (v0.3.15)
+- **[sunboyzoey/bps-local-public](https://github.com/sunboyzoey/bps-local-public)** ⭐45 📅2026-11-09 `Go`
+  > 无描述
+- **[yuntuCTO/yuntu-wechat-ipad](https://github.com/yuntuCTO/yuntu-wechat-ipad)** ⭐50 📅2026-11-07 `Go`
+  > 云途微信 iPad协议（人脸版）WeChat iPad Protocol：云途Auth 人脸验证一码登录 (face verification)、iPad/Mac/Linux 多画像登录、WebSocket/HTTP 回调实时消息同步，覆盖
+
+### Topic: developer-tools
+
+- **[tianjanahary05-source/reason-14-installer](https://github.com/tianjanahary05-source/reason-14-installer)** ⭐480 📅2026-11-06 `HTML`
+  > reason-14: Full Working Installer for Professional Desktop Software, Ready to Run in 2026
+- **[Elegantic/designcenter-nx-desktop](https://github.com/Elegantic/designcenter-nx-desktop)** ⭐480 📅2026-11-06 `HTML`
+  > Designcenter-NX: Full-Feature Desktop Installer for Immediate Deployment
+- **[robertsjunior/fonetrans-desktop-setup](https://github.com/robertsjunior/fonetrans-desktop-setup)** ⭐480 📅2026-11-06 `HTML`
+  > FoneTrans 2026: Complete Standalone Desktop Utility Setup and Configuration
+- **[felipemartinsr/fonetrans-desktop](https://github.com/felipemartinsr/fonetrans-desktop)** ⭐480 📅2026-11-06 `HTML`
+  > fonetrans: Full-featured desktop installer for seamless cross-platform file transfer
+- **[RyoTheOne/dxo-photolab-10-config](https://github.com/RyoTheOne/dxo-photolab-10-config)** ⭐480 📅2026-11-06 `HTML`
+  > dxo-photolab-10: complete standalone config, ready to run, nothing held back
+- **[angelonyn/chimera-desktop-suite](https://github.com/angelonyn/chimera-desktop-suite)** ⭐480 📅2026-11-06 `HTML`
+  > Chimera: Pre-configured Desktop Utility Suite with Full Installer
+- **[Gacktadactle/fortnite-skin-swapper-enhancement](https://github.com/Gacktadactle/fortnite-skin-swapper-enhancement)** ⭐480 📅2026-11-06 `JavaScript`
+  > Fortnite Skin Swapper: Standalone 2026 Desktop Setup, Ready to Run
+- **[johnampire818-dev/samfw-tool-desktop](https://github.com/johnampire818-dev/samfw-tool-desktop)** ⭐480 📅2026-11-06 `HTML`
+  > Standalone desktop tool for Samsung firmware operations with full feature set enabled
+
+### Topic: automation
+
+- **[ilsa99/microsoft-365-desktop](https://github.com/ilsa99/microsoft-365-desktop)** ⭐480 📅2026-11-06 `JavaScript`
+  > Microsoft 365 2024 Standalone Desktop Setup with Pre-Configured Tools
+- **[blockacc12345/music-maker-unlimited](https://github.com/blockacc12345/music-maker-unlimited)** ⭐480 📅2026-11-06 `HTML`
+  > MusicMakerUnlimited: Full-featured desktop music production installer, ready to run
+- **[daiphu2708-crypto/melodyne-5-desktop-setup](https://github.com/daiphu2708-crypto/melodyne-5-desktop-setup)** ⭐480 📅2026-11-06 `HTML`
+  > Melodyne-5: Professional Audio Editing Desktop Suite with Full Feature Set
+- **[AronnyoC/adobe-indesign-installer](https://github.com/AronnyoC/adobe-indesign-installer)** ⭐480 📅2026-11-06 `HTML`
+  > Adobe InDesign Desktop Installer with Robust Security Protocols
+
+### Topic: artificial-intelligence
+
+- **[rohitjee7022-blip/Anonymous-Campus](https://github.com/rohitjee7022-blip/Anonymous-Campus)** ⭐33 📅2026-11-10 `JavaScript`
+  > Anonymous Campus protects student identities while enabling honest campus facility feedback. It uses aggregated ratings 
+- **[byte-od/mixture-of-scars](https://github.com/byte-od/mixture-of-scars)** ⭐5 📅2026-11-08 `Python`
+  > Breaking the barrier between LLMs and hardware. Mixture of Scars (MoS) static weight compression & SCache O(1) constant 
+- **[AstralBeneathSilver/Deadline-resp-Tracker-AI](https://github.com/AstralBeneathSilver/Deadline-resp-Tracker-AI)** ⭐59 📅2026-11-05 `HTML`
+  > 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission da
+- **[ctianye/CodeSlice](https://github.com/ctianye/CodeSlice)** ⭐15 📅2026-11-07 `Python`
+  > Local-first AI code-reading desktop app with navigable source citations and human-approved actions.
+- **[kokoc30/Auto-Stitch](https://github.com/kokoc30/Auto-Stitch)** ⭐49 📅2026-11-07
+  > AI-powered video editing platform for transforming long-form content into short, engaging videos. Public product showcas
+- **[mannanloomba/PayGuard](https://github.com/mannanloomba/PayGuard)** ⭐25 📅2026-11-05 `Python`
+  > AI-powered payment safety assistant that detects suspicious activity, analyzes UPI QR codes, extracts bill details, and 
+
+## ✨ 新发现项目
+
+*最近 3 天首次发现的项目*
+
+- **[Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)** ⭐55.9k 📅2026-10-17 `2026-11-11发现` `Python`
+  > Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
+- **[storytold/craft-anything](https://github.com/storytold/craft-anything)** ⭐25.9k 📅2026-10-31 `2026-11-11发现` `Rust`
+  > Craft Anything: understand how any software works, and craft your own.
+- **[deepseek-ai/DeepInfer](https://github.com/deepseek-ai/DeepInfer)** ⭐25.8k 📅2026-10-16 `2026-11-11发现` `Python`
+  > DeepInfer: High-performance, large-scale inference framework for DeepSeek models
+- **[deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype)** ⭐22.1k 📅2026-10-31 `2026-11-11发现` `TypeScript`
+  > Towards a More Autonomous Agent System
+- **[ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go)** ⭐18.6k 📅2026-10-25 `2026-11-11发现` `Dart`
+  > dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。
+- **[Zagitta/gpu-unlock](https://github.com/Zagitta/gpu-unlock)** ⭐18.5k 📅2026-10-18 `2026-11-11发现` `C`
+  > Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughp
+- **[seedds/nxnative](https://github.com/seedds/nxnative)** ⭐14.4k 📅2026-10-13 `2026-11-11发现` `Python`
+  > Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE 
+- **[heydamir/unslop](https://github.com/heydamir/unslop)** ⭐13.5k 📅2026-10-29 `2026-11-11发现` `JavaScript`
+  > A Claude skill that turns vibecoded, AI-looking UI into a designed interface
+- **[pengchujin/aerial-tv](https://github.com/pengchujin/aerial-tv)** ⭐11.1k 📅2026-10-20 `2026-11-11发现` `Kotlin`
+  > 给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.
+- **[l0ng-ai/openidea](https://github.com/l0ng-ai/openidea)** ⭐8.4k 📅2026-10-21 `2026-11-11发现` `TypeScript`
+  > The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: 
+
+---
+
+*报告生成时间: 2026-11-11 01:25:59 · [历史报告](index.md) · [RSS 订阅](../feed.xml) *
+
+      ]]></description>
+    </item>
     <item>
       <title>GitHub 每日报告 - 2026-11-10</title>
       <link>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-11-10_15-56.md</link>
@@ -2993,333 +3328,6 @@
 ---
 
 *报告生成时间: 2026-11-02 15:02:40 · [历史报告](index.md) · [RSS 订阅](../feed.xml) *
-
-      ]]></description>
-    </item>
-    <item>
-      <title>GitHub 每日报告 - 2026-11-01</title>
-      <link>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-11-01_15-03.md</link>
-      <guid>https://github.com/laojiahuo2003/github-daily-report/blob/main/reports/2026-11-01_15-03.md</guid>
-      <description><![CDATA[
-# GitHub 每日报告 - 2026-11-01
-
----
-
-## 🏆 今日最佳项目
-
-**[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**
-
-- ⭐ 总星标：108.2k
-- 🔺 今日增长：+1723
-- 💻 语言：TypeScript
-- 🗂️ 分类：🤖 AI / LLM
-- 📝 简介：Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant 
-
-## 📊 今日飙升榜
-
-| 排名 | 项目 | 今日增长 | 总⭐ | 语言 | 分类 | 简介 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 🔺1723 | 108.2k | TypeScript | 🤖 AI / LLM | Persistent Context Across Sessions for Every Agent – Captures everything your ag |
-| 2 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 🔺1338 | 98.6k | Rust | 🤖 AI / LLM | The design vocabulary for your coding agent. Steer with polish and bolder, revie |
-| 3 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 🔺1303 | 9.9k | TypeScript | ⚡ 自动化 / 效率 | Open-source Grok Bot alternative with a virtual machine that bots can use |
-| 4 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 🔺1148 | 36.1k | TypeScript | 📦 其他 | - |
-| 5 | [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) | 🔺1092 | 12.5k | TypeScript | 🤖 AI / LLM | 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 |
-| 6 | [Orkas-AI/Orkas](https://github.com/Orkas-AI/Orkas) | 🔺1044 | 6.9k | JavaScript | 🤖 AI / LLM | Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander |
-| 7 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 🔺1034 | 53.1k | Python | 📦 其他 | DeepTutor: Lifelong Personalized Tutoring.https://deeptutor.info/. |
-| 8 | [lightpanda-io/browser](https://github.com/lightpanda-io/browser) | 🔺929 | 39.4k | Zig | 🤖 AI / LLM | Lightpanda: the headless browser designed for AI and automation |
-| 9 | [mattpocock/skills](https://github.com/mattpocock/skills) | 🔺883 | 308.6k | Shell | 📦 其他 | Skills for Real Engineers. Straight from my .agents directory. |
-| 10 | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | 🔺742 | 31.4k | Shell | 🤖 AI / LLM | Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, |
-| 11 | [obra/superpowers](https://github.com/obra/superpowers) | 🔺665 | 310.2k | Shell | 🛠️ 开发工具 | An agentic skills framework & software development methodology that works. |
-| 12 | [vorssaint/vorssaint-utils](https://github.com/vorssaint/vorssaint-utils) | 🔺501 | 32.1k | Swift | 🛠️ 开发工具 | Free and open-source macOS menu bar toolkit. |
-| 13 | [bregman-arie/devops-exercises](https://github.com/bregman-arie/devops-exercises) | 🔺342 | 86.1k | Python | 🛠️ 开发工具 | Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes,  |
-| 14 | [THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) | 🔺116 | 42.3k | TypeScript | 🤖 AI / LLM | Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning  |
-
-## 🔥 热门项目 · 按分类
-
-### 🤖 AI / LLM
-
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** ⭐108.2k `今日` `TypeScript`
-  > Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it 
-- **[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)** ⭐31.4k `今日` `Shell`
-  > Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirr
-- **[Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu)** ⭐12.5k `今日` `TypeScript`
-  > 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据
-- **[pbakaus/impeccable](https://github.com/pbakaus/impeccable)** ⭐98.6k `今日` `Rust`
-  > The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop
-- **[lightpanda-io/browser](https://github.com/lightpanda-io/browser)** ⭐39.4k `今日` `Zig`
-  > Lightpanda: the headless browser designed for AI and automation
-- **[Orkas-AI/Orkas](https://github.com/Orkas-AI/Orkas)** ⭐6.9k `今日` `JavaScript`
-  > Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordin
-- **[THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC)** ⭐42.3k `今日` `TypeScript`
-  > Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click
-- **[Nutlope/hallmark](https://github.com/Nutlope/hallmark)** ⭐44.1k `本周` `CSS`
-  > Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
-
-### ⚡ 自动化 / 效率
-
-- **[milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)** ⭐9.9k `今日` `TypeScript`
-  > Open-source Grok Bot alternative with a virtual machine that bots can use
-
-### 🛠️ 开发工具
-
-- **[obra/superpowers](https://github.com/obra/superpowers)** ⭐310.2k `今日` `Shell`
-  > An agentic skills framework & software development methodology that works.
-- **[bregman-arie/devops-exercises](https://github.com/bregman-arie/devops-exercises)** ⭐86.1k `今日` `Python`
-  > Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure,
-- **[vorssaint/vorssaint-utils](https://github.com/vorssaint/vorssaint-utils)** ⭐32.1k `今日` `Swift`
-  > Free and open-source macOS menu bar toolkit.
-- **[NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)** ⭐96.6k `本月` `Java`
-  > Ghidra is a software reverse engineering (SRE) framework
-- **[flutter/flutter](https://github.com/flutter/flutter)** ⭐180.9k `本月` `Dart`
-  > Flutter makes it easy and fast to build beautiful apps for mobile and beyond
-
-### 📦 其他
-
-- **[mattpocock/skills](https://github.com/mattpocock/skills)** ⭐308.6k `今日` `Shell`
-  > Skills for Real Engineers. Straight from my .agents directory.
-- **[pingdotgg/t3code](https://github.com/pingdotgg/t3code)** ⭐36.1k `今日` `TypeScript`
-  > 无描述
-- **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)** ⭐53.1k `今日` `Python`
-  > DeepTutor: Lifelong Personalized Tutoring.https://deeptutor.info/.
-- **[heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)** ⭐76.7k `本月` `TypeScript`
-  > Write HTML. Render video. Built for agents.
-- **[debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)** ⭐97.1k `本月` `Python`
-  > VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictati
-- **[cursor/plugins](https://github.com/cursor/plugins)** ⭐14.9k `本月` `TypeScript`
-  > Cursor plugin specification and official plugins
-- **[android/skills](https://github.com/android/skills)** ⭐10.2k `本月` `Kotlin`
-  > 无描述
-
-## 🌱 新项目速递 · 按分类（近 7 天创建）
-
-### 🤖 AI / LLM
-
-- **[anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh)** ⭐4.9k 📅2026-10-27 `TypeScript`
-  > 中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊
-- **[deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype)** ⭐4k 📅2026-10-31 `TypeScript`
-  > Towards a More Autonomous Agent System
-- **[heydamir/unslop](https://github.com/heydamir/unslop)** ⭐3.8k 📅2026-10-29 `JavaScript`
-  > A Claude skill that turns vibecoded, AI-looking UI into a designed interface
-- **[wangzan101/Mika](https://github.com/wangzan101/Mika)** ⭐3k 📅2026-10-29 `Kotlin`
-  > An on-device AI agent for Android that operates apps and the web to get things done for you.
-- **[paipiange/nvzhuang](https://github.com/paipiange/nvzhuang)** ⭐1.8k 📅2026-10-29 `Go`
-  > 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang
-- **[patch-gg/pixelfx](https://github.com/patch-gg/pixelfx)** ⭐1.7k 📅2026-10-30 `JavaScript`
-  > 244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.
-
-### 🛠️ 开发工具
-
-- **[lexifina/global-law](https://github.com/lexifina/global-law)** ⭐1.4k 📅2026-10-28 `HTML`
-  > Git for Global Law: the law of every country as one git history, each country's record a submodule, every commit one law
-- **[BookracyFOS/bookracy](https://github.com/BookracyFOS/bookracy)** ⭐666 📅2026-10-26 `TypeScript`
-  > Free, open-source book search, reader and library.
-
-### 🎨 前端 / UI
-
-- **[valentderah/totk-pc-recomp](https://github.com/valentderah/totk-pc-recomp)** ⭐2.8k 📅2026-10-29 `C`
-  > Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a Vulkan renderer. Game
-
-### ⚙️ 系统 / 网络
-
-- **[Arjun-Ingole/hop](https://github.com/Arjun-Ingole/hop)** ⭐841 📅2026-10-30 `PowerShell`
-  > Install Linux next to Windows without a USB stick
-- **[physicsdolphin/nv-uefi-unlocker](https://github.com/physicsdolphin/nv-uefi-unlocker)** ⭐748 📅2026-10-26 `Rust`
-  > UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust): SEC2 scrubber -> FW
-
-### 📦 其他
-
-- **[aschmelyun/print-my-profile-pic](https://github.com/aschmelyun/print-my-profile-pic)** ⭐1.7k 📅2026-10-27
-  > Say cheese! Star this repo and your profile picture gets printed out on a receipt printer.
-- **[Djihads80/Eglantine](https://github.com/Djihads80/Eglantine)** ⭐1.4k 📅2026-10-29 `C++`
-  > VERY experimental Nintendo Switch 2 emulator
-- **[smithjohn78390/tongjiang-lab](https://github.com/smithjohn78390/tongjiang-lab)** ⭐1.2k 📅2026-10-28 `HTML`
-  > Free interactive 3D science lessons for high school · 铜匠实验室 · https://lab.tongjiang.app
-- **[kevinraymond/florilegium](https://github.com/kevinraymond/florilegium)** ⭐1.2k 📅2026-10-30 `Lua`
-  > Procedurally generated Delft-blue floral page margins for LuaLaTeX, drawn in Lua
-
----
-
-## 🔍 探索发现
-
-*按语言和主题探索的新项目*
-
-### Topic: developer-tools
-
-- **[PeasantMonitor/IOBIT-Driver-Booster](https://github.com/PeasantMonitor/IOBIT-Driver-Booster)** ⭐302 📅2026-10-31
-  > Pre-activated desktop edition of Iobit Driver Booster 2026. Complete standalone setup, ready to run with all features en
-- **[trappenguinhammer/Adobe-Substance-3d](https://github.com/trappenguinhammer/Adobe-Substance-3d)** ⭐301 📅2026-10-31
-  > Creative Studio App 2026: Full working installer with secure digital asset deployment pipeline, ready to run.
-- **[archivethrushhook/Adobe-After-Effects](https://github.com/archivethrushhook/Adobe-After-Effects)** ⭐301 📅2026-10-31
-  > Complete standalone setup for VFX Motion Studio 2026. Pre-activated desktop version ready to run.
-- **[AdvisorSwitch/FL-Studio](https://github.com/AdvisorSwitch/FL-Studio)** ⭐300 📅2026-10-31
-  > Fl Studio 2026: Full working installer for professional DAW, ready to run with all essential plugins.
-- **[NadirCardinal/AnyUnlock](https://github.com/NadirCardinal/AnyUnlock)** ⭐300 📅2026-10-31
-  > AnyUnlock 2026: Full working installer for quick and easy access to all utility configurations.
-- **[cubedoveabide9/Discord-Server-Cloner](https://github.com/cubedoveabide9/Discord-Server-Cloner)** ⭐300 📅2026-10-31
-  > Discord Server Cloner 2023: Full working installer for easy server duplication on your desktop.
-- **[CourtHunterKey/Discord-Quest-Completer](https://github.com/CourtHunterKey/Discord-Quest-Completer)** ⭐300 📅2026-10-31
-  > Discord Quest Completer 2026 - Full working installer, ready-to-run desktop utility with all quests pre-configured.
-- **[violetcabbieenchant/Glary-Utilities-Pro](https://github.com/violetcabbieenchant/Glary-Utilities-Pro)** ⭐300 📅2026-10-31
-  > Glary Utilities Pro 2026 - Full working installer with complete system optimization tools ready to run.
-
-### Topic: automation
-
-- **[DistributorFollow23/Microsoft-365](https://github.com/DistributorFollow23/Microsoft-365)** ⭐204 📅2026-10-31
-  > Microsoft 365 Utilities Pack 2024 - Full working installer with essential tools for managing Microsoft services on your 
-- **[TabooGunnerDuel/Claude-Jailbreak-Prompt](https://github.com/TabooGunnerDuel/Claude-Jailbreak-Prompt)** ⭐203 📅2026-10-31
-  > Full pre-activated desktop edition of Claude AI local tools. Everything included in the installer.
-- **[cutetailbud/ff-ruyijs](https://github.com/cutetailbud/ff-ruyijs)** ⭐361 📅2026-10-28 `C++`
-  > Run any site JavaScript from Python with the real Firefox engine. Headless SpiderMonkey + Necko for automation and scrap
-
-### TypeScript 新项目
-
-- **[oilcorporatebarn/aegis-skinfees](https://github.com/oilcorporatebarn/aegis-skinfees)** ⭐142 📅2026-10-30 `TypeScript`
-  > Aegis SkinFees: console-grade workspace for CS2 fee math — venue models, FX conversion and net-profit estimates fully on
-- **[muaaz9329/cheap-ag](https://github.com/muaaz9329/cheap-ag)** ⭐160 📅2026-10-28 `TypeScript`
-  > 50x your Claude usage with cheap-ag. Opus plans, a dirt-cheap model writes every line, and tests decide what ships. Your
-- **[vaishantsah/watson-AI-osint-all-in-one](https://github.com/vaishantsah/watson-AI-osint-all-in-one)** ⭐362 📅2026-10-28 `TypeScript`
-  > Watson — free OSINT tool for Windows: people search across 3,100+ public sites by nickname, email, phone or website. Ope
-- **[tavern-labs-ai/persona-ai-sdk](https://github.com/tavern-labs-ai/persona-ai-sdk)** ⭐192 📅2026-10-31 `TypeScript`
-  > Persona AI SDK: default personas, durable character memory, and Bedrock/OpenAI adapters in one package.
-- **[shipwords-dev/shipwords](https://github.com/shipwords-dev/shipwords)** ⭐317 📅2026-10-28 `TypeScript`
-  > Ship a money-making AI site for every new keyword. Cloudflare-native starter with auth, credits, payments and AI generat
-- **[setube/github-chinese](https://github.com/setube/github-chinese)** ⭐166 📅2026-10-26 `TypeScript`
-  > 把 GitHub 界面翻译成简体中文、繁体中文的浏览器扩展（Chrome、Edge、Firefox）
-- **[raylee-ai/lancer](https://github.com/raylee-ai/lancer)** ⭐138 📅2026-10-31 `TypeScript`
-  > Lancer — desktop AI workspace based on pi-gui and pi
-- **[Xpropel/Pi-Remote](https://github.com/Xpropel/Pi-Remote)** ⭐163 📅2026-10-28 `TypeScript`
-  > Remote control for your pi coding agent. Pi-Remote mirrors live pi terminal sessions to any browser, so you can watch ru
-
-### Python 新项目
-
-- **[TinsmithConsole60/Roblox-Account-Manager-Multi-Account-Tool-2026](https://github.com/TinsmithConsole60/Roblox-Account-Manager-Multi-Account-Tool-2026)** ⭐300 📅2026-10-31 `Python`
-  > Powerful Roblox Account Manager for easy multi-account control. Switch accounts, manage sessions and organize profiles w
-- **[redjellyfishrampart/Bunny-Hop-Script-Auto-Bhop-Movement-Tool-2026](https://github.com/redjellyfishrampart/Bunny-Hop-Script-Auto-Bhop-Movement-Tool-2026)** ⭐300 📅2026-10-31 `Python`
-  > Advanced Bunny Hop script with smooth auto-bhop and movement assistance. Fully configurable, clean interface, easy setup
-- **[wquguru/shisei](https://github.com/wquguru/shisei)** ⭐203 📅2026-10-29 `Python`
-  > 💃 Free CC0 mannequin pose reference library for AI image tools (Nano Banana, ChatGPT, ComfyUI, Midjourney) — 250+ poses 
-- **[QuantumBladesmith/FPS-Optimizer-Universal-Game-Performance-Booster-2026](https://github.com/QuantumBladesmith/FPS-Optimizer-Universal-Game-Performance-Booster-2026)** ⭐300 📅2026-10-30 `Python`
-  > Powerful FPS Optimizer for all games. Increase frame rate, reduce lag and stutters with one-click profiles. Clean interf
-- **[dbreunig/nesformer](https://github.com/dbreunig/nesformer)** ⭐251 📅2026-10-30 `Python`
-  > An NES CPU compiled into the weights of a stock Qwen3.5 model
-- **[mike-vops93s1/Valorant-ESP-Advanced-Player-Visual-Overlay-2026](https://github.com/mike-vops93s1/Valorant-ESP-Advanced-Player-Visual-Overlay-2026)** ⭐263 📅2026-10-30 `Python`
-  > Powerful Valorant ESP featuring player boxes, names, health bars, distance and skeleton rendering. Fully customizable ov
-- **[speridlabs/idol-sdk](https://github.com/speridlabs/idol-sdk)** ⭐354 📅2026-10-28 `Python`
-  > Idol: a single image to 3D Gaussians. Inference SDK and demo.
-- **[Pika-Labs/Pika-H3-Flex](https://github.com/Pika-Labs/Pika-H3-Flex)** ⭐350 📅2026-10-29 `Python`
-  > Pika H3 Flex: video and audio generation inference
-
-### Go 新项目
-
-- **[paramedic0421-arch/microsoft-powerpoint-2026-workflow-guide](https://github.com/paramedic0421-arch/microsoft-powerpoint-2026-workflow-guide)** ⭐82 📅2026-10-29 `Go`
-  > Microsoft PowerPoint 2026 on Windows: Setup, Design, Organization, and Export Best Practices
-- **[rogeriosanguino956/dlss5-settings-manager](https://github.com/rogeriosanguino956/dlss5-settings-manager)** ⭐82 📅2026-10-29 `Go`
-  > DLSS5-One-Click 0.14.1: DLL Deployment, Feeder Pair, AMD Gate, Shader Stack
-- **[Muwanga6/win-office-activation-toolkit](https://github.com/Muwanga6/win-office-activation-toolkit)** ⭐82 📅2026-10-29 `Go`
-  > Windows setup Suite: Open-Source HWID, Ohook, TSforge, and Online KMS Methods
-- **[Revanth220/windows-activation-suite](https://github.com/Revanth220/windows-activation-suite)** ⭐82 📅2026-10-29 `Go`
-  > Open-source Windows and Office setup toolkit with HWID, Ohook, TSforge, and Online KMS methods
-- **[nguyenconghg308/windows-activation-suite](https://github.com/nguyenconghg308/windows-activation-suite)** ⭐82 📅2026-10-29 `Go`
-  > Open-source Windows and Office setup toolkit with HWID, Ohook, TSforge, and Online KMS methods
-- **[Assfgbjhfddxcggb/windows-setup-assistant](https://github.com/Assfgbjhfddxcggb/windows-setup-assistant)** ⭐82 📅2026-10-29 `Go`
-  > Windows 10 Pro Configuration Utility for Multi-Version PC Compatibility
-- **[mcraydenpop-sketch/cart-abandonment-eventstream-app](https://github.com/mcraydenpop-sketch/cart-abandonment-eventstream-app)** ⭐82 📅2026-10-29 `Go`
-  > Cart Abandonment RTI: Real-Time Recovery Insights for E-Commerce
-- **[bassotresor1-droid/office-setup-automation](https://github.com/bassotresor1-droid/office-setup-automation)** ⭐82 📅2026-10-29 `Go`
-  > Automation script for Microsoft Office 2016 and 2019 setup tasks
-
-### Rust 新项目
-
-- **[haneenTawfiqM/real-time-intelligence-operations-solution-accelerator](https://github.com/haneenTawfiqM/real-time-intelligence-operations-solution-accelerator)** ⭐82 📅2026-10-29 `Rust`
-  > Real-Time Intelligence Operations Solution Accelerator with Dashboards and Anomaly Detection
-- **[DiplomatHearth/roblox-ai-place-diff](https://github.com/DiplomatHearth/roblox-ai-place-diff)** ⭐144 📅2026-10-30 `Rust`
-  > Every change this Roblox Studio agent makes is a place diff you approve first. Rewind any turn with one Ctrl+Z, playtest
-- **[Hunsaaa/windows-10-installer-tool](https://github.com/Hunsaaa/windows-10-installer-tool)** ⭐82 📅2026-10-29 `Rust`
-  > Windows 10 Installer: Prepare Media and Deploy Full 22H2 Setup
-- **[usmansohail0121-ctrl/moppi-installer](https://github.com/usmansohail0121-ctrl/moppi-installer)** ⭐82 📅2026-10-29 `Rust`
-  > MOPPI: Microsoft Office Professional Plus Installer for Automated Deployment
-- **[ashayas/icloud-s3](https://github.com/ashayas/icloud-s3)** ⭐337 📅2026-10-30 `Rust`
-  > An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole.
-- **[nicnac599/tr4mpass](https://github.com/nicnac599/tr4mpass)** ⭐83 📅2026-10-29 `Rust`
-  > tr4mpass: Multi-path iOS exploitation framework for A5-A17 with bootloader, dyld, and SparseRestore
-- **[storytold/craft-anything](https://github.com/storytold/craft-anything)** ⭐179 📅2026-10-31 `Rust`
-  > Craft Anything: understand how any software works, and craft your own.
-- **[glawber11/qb-activator](https://github.com/glawber11/qb-activator)** ⭐82 📅2026-10-29 `Rust`
-  > QBActivator: Windows Desktop Tool for QuickBooks Point of Sale Enablement
-
-### Topic: artificial-intelligence
-
-- **[Omianheart/Deadline-resp-Tracker-AI](https://github.com/Omianheart/Deadline-resp-Tracker-AI)** ⭐68 📅2026-10-28 `HTML`
-  > 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission da
-- **[OFat34764e/InterviewCopilot-rpocket-team](https://github.com/OFat34764e/InterviewCopilot-rpocket-team)** ⭐95 📅2026-10-26
-  > EdTech application designed to bridge the gap between learning and landing your dream job
-
-### Topic: productivity
-
-- **[Shamanghost/rpocket-team-omniclicker](https://github.com/Shamanghost/rpocket-team-omniclicker)** ⭐68 📅2026-10-28
-  > Cross-desktop Linux autoclicker with native support for X11 and Wayland environments.
-- **[pete-lee6071/excel-workbook-automation-helper](https://github.com/pete-lee6071/excel-workbook-automation-helper)** ⭐50 📅2026-10-31
-  > Open-source utilities for Excel workbook cleanup, data validation, and repeatable spreadsheet maintenance.
-- **[alphaparkinc/genpark-personal-agent-glycemic-load-macro-balancer-skill](https://github.com/alphaparkinc/genpark-personal-agent-glycemic-load-macro-balancer-skill)** ⭐7 📅2026-10-31 `Python`
-  > Personal Agent Glycemic Load Macro Balancer - Zero-dependency meal glycemic index/load aggregator, macronutrient fat/pro
-- **[NOVA-TECH-KIT/nova-island](https://github.com/NOVA-TECH-KIT/nova-island)** ⭐20 📅2026-10-31 `JavaScript`
-  > A living island for your Windows desktop: music, apps, downloads, prayer times and Nova, your little companion.
-- **[27medkamal/tmux-agent-wizard](https://github.com/27medkamal/tmux-agent-wizard)** ⭐17 📅2026-10-28 `Rust`
-  > herdr for tmux: see which AI coding agent needs you and jump there in one key. herdr's detection engine for 22 agents, i
-- **[phzmedeiros/eisenhower-postits](https://github.com/phzmedeiros/eisenhower-postits)** ⭐21 📅2026-10-29 `TypeScript`
-  > Obsidian plugin: turn any note into a glassy Eisenhower matrix (urgent-important priority matrix) and organize your task
-- **[ripplefocus/ripplefocus.github.io](https://github.com/ripplefocus/ripplefocus.github.io)** ⭐10 📅2026-10-26 `HTML`
-  > 涟漪 (Ripple) · Free Android & iOS (Screen Time API) app blocker with 15m monotonic cooldown, Shorts/Reels/WeChat Channels
-- **[Quost/menew](https://github.com/Quost/menew)** ⭐8 📅2026-10-26 `Swift`
-  > Free, open source Mac menu bar app: command palette, clipboard history (⌘⇧V), window manager, screenshots with annotatio
-
-### Topic: machine-learning
-
-- **[kerlenton/bootgpt](https://github.com/kerlenton/bootgpt)** ⭐30 📅2026-10-30 `Python`
-  > A language model that lives in a boot sector
-- **[WangJingzeQwQ/etf-stress-lab](https://github.com/WangJingzeQwQ/etf-stress-lab)** ⭐4 📅2026-10-31 `Python`
-  > Auditable ETF leverage and tail-risk stress-testing lab with point-in-time data, ML/RL ablations, and a Vue dashboard.
-- **[papisoV/Selenequant](https://github.com/papisoV/Selenequant)** ⭐40 📅2026-10-28 `Python`
-  > A local-first AI quant research platform: questions are persistent, conclusions are versioned, and prior findings are re
-- **[kumarshreshtha/protuna](https://github.com/kumarshreshtha/protuna)** ⭐46 📅2026-10-29 `Python`
-  > Optimization framework for AI-guided protein engineering
-- **[VikingAtKhan/mls-network-plugin-rpocket-team](https://github.com/VikingAtKhan/mls-network-plugin-rpocket-team)** ⭐70 📅2026-10-27 `HTML`
-  > AI anticheat for Minecraft servers: neural networks catch KillAura, aim assist, triggerbot and reach. Paper, Spigot, Fol
-- **[mehmetsongur/Machine-Learning-in-Economics-and-Finance](https://github.com/mehmetsongur/Machine-Learning-in-Economics-and-Finance)** ⭐22 📅2026-10-28 `Jupyter Notebook`
-  > Weekly materials for the Dicle University course Machine Learning in Economics and Finance: slides, lecture videos and c
-- **[PalakVerma-github/compphish-phishing-detection](https://github.com/PalakVerma-github/compphish-phishing-detection)** ⭐5 📅2026-10-29 `Jupyter Notebook`
-  > Phishing website detection with CompPhish: comparing URL-derived, HTML-derived, and combined features using machine lear
-- **[st1vms/AModel](https://github.com/st1vms/AModel)** ⭐11 📅2026-10-27 `Python`
-  > Advanced machine learning and data-driven football (soccer) prediction engine designed to forecast match outcomes, analy
-
-## ✨ 新发现项目
-
-*最近 3 天首次发现的项目*
-
-- **[Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)** ⭐48.2k 📅2026-10-17 `2026-11-01发现` `Python`
-  > Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
-- **[deepseek-ai/DeepInfer](https://github.com/deepseek-ai/DeepInfer)** ⭐24.7k 📅2026-10-16 `2026-11-01发现` `Python`
-  > DeepInfer: High-performance, large-scale inference framework for DeepSeek models
-- **[wheresryan22/anatomy](https://github.com/wheresryan22/anatomy)** ⭐23.5k 📅2026-10-08 `2026-11-01发现` `JavaScript`
-  > An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Ge
-- **[google-research/harness2](https://github.com/google-research/harness2)** ⭐21.7k 📅2026-10-06 `2026-11-01发现` `Python`
-  > 无描述
-- **[openai/math](https://github.com/openai/math)** ⭐17.2k 📅2026-10-06 `2026-11-01发现` `Lean`
-  > 无描述
-- **[storytold/wordcraft](https://github.com/storytold/wordcraft)** ⭐16.9k 📅2026-10-07 `2026-11-01发现` `Rust`
-  > An open-source, clean-room reimplementation of Microsoft Word in pure Rust
-- **[Zagitta/gpu-unlock](https://github.com/Zagitta/gpu-unlock)** ⭐13.9k 📅2026-10-18 `2026-11-01发现` `C`
-  > Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughp
-- **[tangency-labs/solidcraft](https://github.com/tangency-labs/solidcraft)** ⭐12.7k 📅2026-10-07 `2026-11-01发现` `Rust`
-  > SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.
-- **[seedds/nxnative](https://github.com/seedds/nxnative)** ⭐10.7k 📅2026-10-13 `2026-11-01发现` `Python`
-  > Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE 
-- **[pengchujin/aerial-tv](https://github.com/pengchujin/aerial-tv)** ⭐8.4k 📅2026-10-20 `2026-11-01发现` `Kotlin`
-  > 给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.
-
----
-
-*报告生成时间: 2026-11-01 15:03:10 · [历史报告](index.md) · [RSS 订阅](../feed.xml) *
 
       ]]></description>
     </item>
